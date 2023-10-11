@@ -16,12 +16,14 @@ function Game() {
   // const [wrongAnswers, setWrongAnswers] = useState([]);
   const [isFinished, setIsFinished] = useState(false);
   const [allAnswers, setAllAnswers] = useState([]);
+  const [questionTitle, setQuestionTitle] = useState('');
 
   useEffect(() => {
     if (counter < questions.length) {
       setAllAnswers([])
       const allAnswersDefine = [questions[counter].correct_awnsner, ...questions[counter].wrong_awnsners]
       const shuffleAnswers = shuffle(allAnswersDefine)
+      setQuestionTitle(questions[counter].question)
       setAllAnswers(shuffleAnswers)
     }
     if (counter >= questions.length) {
@@ -47,8 +49,8 @@ function Game() {
   return (
     <div>
       <Header />
-      <h1>Game</h1>
       <div>
+        {!isFinished && <h1>{questionTitle}</h1>}
         {isFinished ?
           (<div>
             <h1>Acertou: {correctCounter}</h1>
@@ -61,7 +63,7 @@ function Game() {
               key={e + i}
               disabled={isDisabled}
               onClick={questionMarked}
-              className={isMarked && ((isMarked && (e === questions[counter].correct_awnsner))
+              className={isMarked && ((e === questions[counter].correct_awnsner)
                 ? 'correct__choice'
                 : 'wrong__choice')}
             >{e}</button>
