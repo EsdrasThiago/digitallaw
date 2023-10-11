@@ -3,72 +3,40 @@ const questions = [
     question: "pergunta",
     correct_awnsner: 'correta',
     wrong_awnsners: [
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
+      'wrong',
+      'wrong',
+      'wrong',
+      'wrong',
     ]
   },
   {
     question: "pergunta",
     correct_awnsner: 'correta',
     wrong_awnsners: [
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
+      'wrong',
+      'wrong',
+      'wrong',
+      'wrong',
     ]
   },
   {
     question: "pergunta",
     correct_awnsner: 'correta',
     wrong_awnsners: [
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
+      'wrong',
+      'wrong',
+      'wrong',
+      'wrong',
     ]
   },
   {
     question: "pergunta",
     correct_awnsner: 'correta',
     wrong_awnsners: [
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
-      {
-        wrong_awnser: 'wrong',
-      },
+      'wrong',
+      'wrong',
+      'wrong',
+      'wrong',
     ]
   },
 ]
