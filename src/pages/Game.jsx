@@ -6,30 +6,41 @@ import shuffle from "../utils/shuffleArray";
 function Game() {
 
   const [counter, setCounter] = useState(0);
+  const [correctCounter, setCorrectCounter] = useState(0);
+  const [wrongCounter, setWrongCounter] = useState(0);
   // const [timer, setTimer] = useState(30);
   // const [isLoading, setIsLoading] = useState(false);
-  // const [isMarked, setIsMarked] = useState(true);
+  const [isMarked, setIsMarked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
   // const [answers, setAnswers] = useState([]);
   // const [wrongAnswers, setWrongAnswers] = useState([]);
-  // const [isFinished, setIsFinished] = useState(false);
+  const [isFinished, setIsFinished] = useState(false);
   const [allAnswers, setAllAnswers] = useState([]);
 
   useEffect(() => {
+    if (counter < questions.length) {
       setAllAnswers([])
-      const allAnswersDefine = [questions[counter].correct_awnsner, questions[counter].wrong_awnsners[0],
-      questions[counter].wrong_awnsners[1], questions[counter].wrong_awnsners[2]]
+      const allAnswersDefine = [questions[counter].correct_awnsner, ...questions[counter].wrong_awnsners]
       const shuffleAnswers = shuffle(allAnswersDefine)
       setAllAnswers(shuffleAnswers)
+    }
+    if (counter >= questions.length) {
+      setIsFinished(true);
+    }
   }, [counter])
 
   const nextQuestion = () => {
     setAllAnswers([])
     setCounter(counter + 1)
     setIsDisabled(false)
+    setIsMarked(false)
   }
 
-  const questionMarked = () => {
+  const questionMarked = ({ target }) => {
+    const isCorrect = questions[counter].correct_awnsner === target.value;
+    if (isCorrect) setCorrectCounter(correctCounter + 1)
+    if (!isCorrect) setWrongCounter(wrongCounter + 1)
+    setIsMarked(true);
     setIsDisabled(true)
   }
 
@@ -38,23 +49,31 @@ function Game() {
       <Header />
       <h1>Game</h1>
       <div>
-        {allAnswers.map((e) => (
-          <button
-            type="button"
-            value={e}
-            key={e + counter}
-            disabled={isDisabled}
-            onClick={questionMarked}
-          // className={ isMarked && ((isMarked && (e === allAnswers[counter].correct_answer))
-          //   ? 'correct__choice'
-          //   : 'wrong__choice') }
-          >{e}</button>
-        ))}
+        {isFinished ?
+          (<div>
+            <h1>Acertou: {correctCounter}</h1>
+            <h1>Errou: {wrongCounter}</h1>
+          </div>) :
+          allAnswers.map((e, i) => (
+            <button
+              type="button"
+              value={e}
+              key={e + i}
+              disabled={isDisabled}
+              onClick={questionMarked}
+              className={isMarked && ((isMarked && (e === questions[counter].correct_awnsner))
+                ? 'correct__choice'
+                : 'wrong__choice')}
+            >{e}</button>
+          ))
+        }
       </div>
-      <button
-        onClick={nextQuestion}
-        disabled={!isDisabled}
-      >Proxima Pergunta</button>
+      {!isFinished &&
+        <button
+          onClick={nextQuestion}
+          disabled={!isDisabled}
+        >Proxima Pergunta</button>
+      }
     </div>
   )
 }

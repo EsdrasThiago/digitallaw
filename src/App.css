@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.correct__choice {
+  border-color: green;
+}
+
+.wrong__choice {
+  border-color: red;
+}
