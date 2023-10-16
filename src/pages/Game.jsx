@@ -100,17 +100,18 @@ function Game() {
           disabled={!isDisabled}
         >Proxima Pergunta</button>
       }
-      <div className="countdown">
-        <div className="circle"
-        >
-          <div
-            className="fill"
-            style={{
-              clipPath: `circle(${fillPercentage}%)`,
-            }}
+      {!isFinished &&
+        <div className="countdown">
+          <div className="circle">
+            <div
+              className="fill"
+              style={{
+                clipPath: `circle(${fillPercentage}%)`,
+              }}
             ></div>
+          </div>
         </div>
-      </div>
+      }
     </div>
   )
 }
