@@ -7,8 +7,9 @@ function Game() {
 
   const [counter, setCounter] = useState(0);
   const [correctCounter, setCorrectCounter] = useState(0);
+  const [fillPercentage, setFillPercentage] = useState(30);
   const [wrongCounter, setWrongCounter] = useState(0);
-  // const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(30);
   // const [isLoading, setIsLoading] = useState(false);
   const [isMarked, setIsMarked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
@@ -31,11 +32,34 @@ function Game() {
     }
   }, [counter])
 
+  const updateFill = () => {
+    setFillPercentage((timer / 10) * 10);
+  };
+
+  useEffect(() => {
+    const countdown = setInterval(() => {
+      if (timer >= 0) {
+        setTimer(timer - 1);
+        updateFill();
+      } else {
+        setIsDisabled(true)
+        setIsMarked(true)
+        setWrongCounter(counter + 1)
+        clearInterval(countdown);
+      }
+    }, 3000);
+
+    return () => {
+      clearInterval(countdown);
+    };
+  }, [timer]);
+
   const nextQuestion = () => {
     setAllAnswers([])
     setCounter(counter + 1)
     setIsDisabled(false)
     setIsMarked(false)
+    setTimer(30)
   }
 
   const questionMarked = ({ target }) => {
@@ -76,6 +100,17 @@ function Game() {
           disabled={!isDisabled}
         >Proxima Pergunta</button>
       }
+      <div className="countdown">
+        <div className="circle"
+        >
+          <div
+            className="fill"
+            style={{
+              clipPath: `circle(${fillPercentage}%)`,
+            }}
+            ></div>
+        </div>
+      </div>
     </div>
   )
 }
