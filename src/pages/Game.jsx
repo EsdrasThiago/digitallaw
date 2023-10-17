@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Header from "../components/Header"
+import Footer from "../components/Footer";
 import questions from "../mock/questions";
 import shuffle from "../utils/shuffleArray";
 
@@ -10,11 +11,8 @@ function Game() {
   const [fillPercentage, setFillPercentage] = useState(30);
   const [wrongCounter, setWrongCounter] = useState(0);
   const [timer, setTimer] = useState(30);
-  // const [isLoading, setIsLoading] = useState(false);
   const [isMarked, setIsMarked] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
-  // const [answers, setAnswers] = useState([]);
-  // const [wrongAnswers, setWrongAnswers] = useState([]);
   const [isFinished, setIsFinished] = useState(false);
   const [allAnswers, setAllAnswers] = useState([]);
   const [questionTitle, setQuestionTitle] = useState('');
@@ -123,14 +121,7 @@ function Game() {
           </div>
         }
       </div>
-      {/* {!isFinished &&
-        
-      } */}
-      {!isFinished &&
-        <div>
-
-        </div>
-      }
+      <Footer />
     </div>
   )
 }

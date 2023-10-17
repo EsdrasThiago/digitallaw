@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 function Home() {
 
@@ -13,6 +14,7 @@ function Home() {
       <Header />
       <h1>Home</h1>
       <button onClick={quizButton}>Jogar Quiz</button>
+      <Footer />
     </div>
   )
 }
