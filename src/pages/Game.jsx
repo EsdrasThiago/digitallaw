@@ -38,25 +38,33 @@ function Game() {
 
   useEffect(() => {
     const countdown = setInterval(() => {
-      if (timer >= 0) {
-        setTimer(timer - 1);
-        updateFill();
-      } else {
-        setIsDisabled(true)
-        setIsMarked(true)
-        setWrongCounter(counter + 1)
-        clearInterval(countdown);
+      if (isMarked) {
+        setTimer(timer)
+        clearInterval(countdown)
+      }
+      if (!isMarked) {
+        if (timer > 0) {
+          setTimer(timer - 1);
+          updateFill();
+        } else {
+          setIsDisabled(true)
+          setFillPercentage(-1)
+          setIsMarked(true)
+          setWrongCounter(counter + 1)
+          clearInterval(countdown);
+        }
       }
     }, 3000);
 
     return () => {
       clearInterval(countdown);
     };
-  }, [timer]);
+  }, [timer, isMarked]);
 
   const nextQuestion = () => {
     setAllAnswers([])
     setCounter(counter + 1)
+    setFillPercentage(30);
     setIsDisabled(false)
     setIsMarked(false)
     setTimer(30)
@@ -80,36 +88,47 @@ function Game() {
             <h1>Acertou: {correctCounter}</h1>
             <h1>Errou: {wrongCounter}</h1>
           </div>) :
-          allAnswers.map((e, i) => (
-            <button
-              type="button"
-              value={e}
-              key={e + i}
-              disabled={isDisabled}
-              onClick={questionMarked}
-              className={isMarked && ((e === questions[counter].correct_awnsner)
-                ? 'correct__choice'
-                : 'wrong__choice')}
-            >{e}</button>
-          ))
+          <div className="game__timer">
+            <div className="main__game">
+              <div className="questions__buttons">
+                {allAnswers.map((e, i) => (
+                  <button
+                    type="button"
+                    value={e}
+                    key={e + i}
+                    disabled={isDisabled}
+                    onClick={questionMarked}
+                    className={isMarked && ((e === questions[counter].correct_awnsner)
+                      ? 'correct__choice'
+                      : 'wrong__choice')}
+                  >{e}</button>
+                ))}
+              </div>
+              <button
+                onClick={nextQuestion}
+                disabled={!isDisabled}
+              >Proxima Pergunta</button>
+            </div>
+            <div className="countdown">
+              <div className="circle">
+                <div
+                  className="fill"
+                  style={{
+                    clipPath: `circle(${fillPercentage}%)`,
+                  }}
+                ></div>
+                <div className="countdown-text">{timer}</div>
+              </div>
+            </div>
+          </div>
         }
       </div>
+      {/* {!isFinished &&
+        
+      } */}
       {!isFinished &&
-        <button
-          onClick={nextQuestion}
-          disabled={!isDisabled}
-        >Proxima Pergunta</button>
-      }
-      {!isFinished &&
-        <div className="countdown">
-          <div className="circle">
-            <div
-              className="fill"
-              style={{
-                clipPath: `circle(${fillPercentage}%)`,
-              }}
-            ></div>
-          </div>
+        <div>
+
         </div>
       }
     </div>

@@ -6,6 +6,14 @@ const questions = [
       'wrong',
       'wrong',
       'wrong',
+    ]
+  },
+  {
+    question: "pergunta",
+    correct_awnsner: 'correta',
+    wrong_awnsners: [
+      'wrong',
+      'wrong',
       'wrong',
     ]
   },
@@ -16,24 +24,12 @@ const questions = [
       'wrong',
       'wrong',
       'wrong',
-      'wrong',
     ]
   },
   {
     question: "pergunta",
     correct_awnsner: 'correta',
     wrong_awnsners: [
-      'wrong',
-      'wrong',
-      'wrong',
-      'wrong',
-    ]
-  },
-  {
-    question: "pergunta",
-    correct_awnsner: 'correta',
-    wrong_awnsners: [
-      'wrong',
       'wrong',
       'wrong',
       'wrong',
