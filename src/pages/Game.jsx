@@ -16,6 +16,7 @@ function Game() {
   const [isFinished, setIsFinished] = useState(false);
   const [allAnswers, setAllAnswers] = useState([]);
   const [questionTitle, setQuestionTitle] = useState('');
+  const [isAllRight, setIsAllRight] = useState(false);
 
   useEffect(() => {
     if (counter < questions.length) {
@@ -66,6 +67,9 @@ function Game() {
     setIsDisabled(false)
     setIsMarked(false)
     setTimer(30)
+    if (correctCounter == 4) {
+      setIsAllRight(true);
+    }
   }
 
   const questionMarked = ({ target }) => {
@@ -120,6 +124,7 @@ function Game() {
             </div>
           </div>
         }
+        {isAllRight && <h1>Parabens voce acertou tudo!!</h1>}
       </div>
       <Footer />
     </div>
