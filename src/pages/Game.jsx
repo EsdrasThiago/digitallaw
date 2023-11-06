@@ -7,8 +7,8 @@ import shuffle from "../utils/shuffleArray";
 function Game() {
 
   const [counter, setCounter] = useState(0);
-  const [correctCounter, setCorrectCounter] = useState(0);
   const [fillPercentage, setFillPercentage] = useState(30);
+  const [correctCounter, setCorrectCounter] = useState(0);
   const [wrongCounter, setWrongCounter] = useState(0);
   const [timer, setTimer] = useState(30);
   const [isMarked, setIsMarked] = useState(false);
@@ -46,11 +46,13 @@ function Game() {
           setTimer(timer - 1);
           updateFill();
         } else {
-          setIsDisabled(true)
-          setFillPercentage(-1)
-          setIsMarked(true)
-          setWrongCounter(counter + 1)
-          clearInterval(countdown);
+          if (!isFinished) {
+            setIsDisabled(true)
+            setFillPercentage(-1)
+            setIsMarked(true)
+            setWrongCounter(counter + 1)
+            clearInterval(countdown);
+          }
         }
       }
     }, 3000);
