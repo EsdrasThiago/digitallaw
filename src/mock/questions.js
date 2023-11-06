@@ -1,38 +1,47 @@
 const questions = [
   {
-    question: "pergunta",
-    correct_awnsner: 'correta',
+    question: "A quem pertence a competência do ICMS?",
+    correct_awnsner: 'Estado',
     wrong_awnsners: [
-      'wrong',
-      'wrong',
-      'wrong',
+      'União',
+      'Município',
+      'Territórios federais',
     ]
   },
   {
-    question: "pergunta",
-    correct_awnsner: 'correta',
+    question: "O que é ICMS-DIFAL?",
+    correct_awnsner: 'Diferencial de Alíquotas interna e a interestadual do ICMS',
     wrong_awnsners: [
-      'wrong',
-      'wrong',
-      'wrong',
+      'Diferença na base de cálculo da mercadoria.',
+      'Ajuste no fato gerador intermunicipal',
+      'Hipótese de incidência de kelsen',
     ]
   },
   {
-    question: "pergunta",
-    correct_awnsner: 'correta',
+    question: "Qual Convênio do Confaz regulou essa temática?",
+    correct_awnsner: 'Convênio 93/2015',
     wrong_awnsners: [
-      'wrong',
-      'wrong',
-      'wrong',
+      'Convênio 98/2015',
+      'Convênio 96/2015',
+      'Convênio 96/2006',
     ]
   },
   {
-    question: "pergunta",
-    correct_awnsner: 'correta',
+    question: "No que impactaria para o Simples Nacional?",
+    correct_awnsner: 'As pequenas empresas sofreriam com essa tributação.',
     wrong_awnsners: [
-      'wrong',
-      'wrong',
-      'wrong',
+      'As grandes empresas iriam ganhar mais.',
+      'As multinacionais iriam fechar as portas.',
+      'As pequenas empresas iriam faturar mais.',
+    ]
+  },
+  {
+    question: "Qual foi o placar da votação (modulação)da ADI 5469 feita pelo STF?",
+    correct_awnsner: '9 a 2',
+    wrong_awnsners: [
+      '6 a 5',
+      '8 a 3',
+      '7 a 5',
     ]
   },
 ]
