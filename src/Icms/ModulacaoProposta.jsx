@@ -1,7 +1,16 @@
+import { Link } from "react-router-dom"
+import Footer from "../components/Footer"
+import GameButton from "../components/GameButton"
+import Header from "../components/Header"
+import modulacaoIMG from "../images/modulacaoIMG.png"
+
 function ModulacaoProposta() {
 
   return (
     <div>
+      <Header />
+      <div className="main__icsm">
+      <img src={modulacaoIMG} alt="Diversas pessoas"/>
       <h1>DECISÃO</h1>
       <p>O Plenário do Supremo Tribunal Federal (STF),em 21 de fevereiro de 2021,julgou inconstitucional a
         cobrança do Diferencial de Alíquota do Imposto sobre Circulação de Mercadorias e Serviços (Difal/ICMS),
@@ -18,6 +27,10 @@ function ModulacaoProposta() {
         em razão da ausência de norma que poderia gerar prejuízos aos estados. O ministro salientou que,
         durante esse período, o Congresso Nacional terá possibilidade de aprovar lei sobre o tema.
         Ficam afastadas da modulação as ações judiciais em curso sobre a questão.</p>
+      <GameButton />
+      </div>
+      <Link to="/icsmimpactos"><h2>Matéria Anterior</h2></Link>
+      <Footer />
     </div>
   )
 }

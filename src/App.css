@@ -105,3 +105,27 @@
   height: 50px;
   transition: 1s;
 }
+
+.main__icsm {
+  margin-top: 40px;
+  width: auto;
+  animation-name: coming;
+  animation-duration: 2s;
+}
+
+.main__icsm p {
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@keyframes coming {
+  from {
+    opacity: 0%;
+    margin-top: 500px;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 40px;
+  }
+}

@@ -1,7 +1,15 @@
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import diferencialIMG from "../images/diferencialIMG.png";
+
 function DiferencialIcms() {
 
   return (
     <div>
+      <Header />
+      <div className="main__icsm">
+      <img src={diferencialIMG} alt="Saco de dinheiro escrito ICMS"/>
       <p>
         No dia 16/04/2015 foi promulgada a Emenda Constitucional n° 87 de 2015,
         que alterou a sistemática de cobrança do ICMS nas operações interestaduais
@@ -19,6 +27,9 @@ function DiferencialIcms() {
         pois acabavam recebendo todo o ICMS das operações interestaduais destinadas
         a não-contribuintes.
       </p>
+      <Link to="/icsmimpactos"><h2>Próxima Matéria</h2></Link>
+      </div>
+      <Footer />
     </div>
   )
 }
