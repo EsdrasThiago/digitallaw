@@ -82,8 +82,15 @@
 }
 
 .digital__icon {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+}
+
+.digital__icon:hover {
+  width: 210px;
+  height: 210px;
+  transition: 1s;
 }
 
 .main__game {
@@ -104,6 +111,7 @@
   width: 50px;
   height: 50px;
   transition: 1s;
+  cursor: pointer;
 }
 
 .main__icsm {
@@ -117,6 +125,94 @@
   width: 40%;
   margin: auto;
   margin-top: 20px;
+}
+
+.main__icsm img {
+  border-radius: 25px;
+}
+
+.icsm__link {
+  margin-top: 40px;
+  width: 40vw;
+  color: white;
+}
+
+.icsm__link h2 {
+  width: 500px;
+  font-size: 20px;
+  margin: auto;
+  transition: 2s;
+}
+
+.icsm__link:hover h2 {
+  color: white;
+  font-size: 20.5px;
+  transition: 2s;
+}
+
+.icsm__link img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.underline {
+  opacity: 100%;
+  width: 500px;
+  animation-name: underline-animation;
+  animation-duration: 1s;
+}
+
+.underline:hover {
+  background-color: white;
+}
+
+.left__button {
+  position: fixed;
+  top: 90vh;
+  width: 240px;
+  left: 10px;
+  z-index: 1;
+  /* border: solid rgb(0, 0, 0); */
+  color: white;
+  background-color: #1a1a1a;;
+  border-radius: 25px;
+  transition: 1s;
+}
+
+.right__button {
+  position: fixed;
+  top: 90vh;
+  width: 240px;
+  left: 85vw;
+  z-index: 1;
+  /* border: solid rgb(0, 0, 0); */
+  color: white;
+  background-color: #1a1a1a;;
+  border-radius: 25px;
+  transition: 1s;
+}
+
+.coming__class {
+  animation-name: coming;
+  animation-duration: 2s;
+}
+
+@keyframes underline-animation {
+  from {
+    opacity: 0%;
+    width: 0px;
+  }
+  to {
+    opacity: 100%;
+    width: 500px;
+  }
 }
 
 @keyframes coming {

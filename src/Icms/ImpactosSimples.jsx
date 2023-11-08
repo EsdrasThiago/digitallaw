@@ -6,7 +6,7 @@ import impactoIMG from "../images/impactosIMG.png"
 function ImpactosSimples() {
 
   return (
-    <div>
+    <div className="box">
       <Header />
       <div className="main__icsm">
       <img src={impactoIMG} alt="Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?"/>
@@ -15,9 +15,9 @@ function ImpactosSimples() {
         tributos, simplificando declarações, entre outras facilidades, e desta forma, incentivar o empreendedorismo no país.</p>
       <p>Por ser um regime de tratamento tributário diferenciado e favorecido, com recolhimento unificado,
         o DIFAL já estaria incluso no cálculo, assim como outros impostos devidos.</p>
-        <Link to="/icsmdiferencial"><h2>Matéria Anterior</h2></Link>
-        <Link to="/icsmmodulacao"><h2>Próxima Matéria</h2></Link>
-        </ div>
+        </div>
+        <Link to="/icsmdiferencial" className="left__button"><h2>Matéria Anterior</h2></Link>
+        <Link to="/icsmmodulacao" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )

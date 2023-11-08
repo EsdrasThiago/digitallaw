@@ -29,7 +29,7 @@ function ModulacaoProposta() {
         Ficam afastadas da modulação as ações judiciais em curso sobre a questão.</p>
       <GameButton />
       </div>
-      <Link to="/icsmimpactos"><h2>Matéria Anterior</h2></Link>
+      <Link to="/icsmimpactos" className="left__button"><h2>Matéria Anterior</h2></Link>
       <Footer />
     </div>
   )

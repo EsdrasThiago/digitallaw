@@ -27,8 +27,8 @@ function DiferencialIcms() {
         pois acabavam recebendo todo o ICMS das operações interestaduais destinadas
         a não-contribuintes.
       </p>
-      <Link to="/icsmimpactos"><h2>Próxima Matéria</h2></Link>
       </div>
+      <Link to="/icsmimpactos" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )
