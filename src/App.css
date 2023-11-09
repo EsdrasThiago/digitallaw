@@ -146,8 +146,8 @@
 
 .icsm__link:hover h2 {
   color: white;
-  font-size: 20.5px;
-  transition: 2s;
+  font-size: 20.2px;
+  transition: 1s;
 }
 
 .icsm__link img {
@@ -171,6 +171,7 @@
 
 .underline:hover {
   background-color: white;
+  color: white;
 }
 
 .left__button {
