@@ -205,6 +205,10 @@
   animation-duration: 2s;
 }
 
+.quiz__button {
+  margin-top: 100px;
+}
+
 @keyframes underline-animation {
   from {
     opacity: 0%;
