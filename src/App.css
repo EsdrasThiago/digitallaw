@@ -52,7 +52,7 @@
 
 .questions__buttons {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .digital__icon:hover {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   transition: 1s;
 }
 
@@ -137,6 +137,11 @@
   color: white;
 }
 
+.icsm__link:hover {
+  
+  transition: 2s;
+}
+
 .icsm__link h2 {
   width: 500px;
   font-size: 20px;
@@ -147,7 +152,7 @@
 .icsm__link:hover h2 {
   color: white;
   font-size: 20.2px;
-  transition: 1s;
+  transition: 2s;
 }
 
 .icsm__link img {
@@ -163,15 +168,9 @@
 }
 
 .underline {
-  opacity: 100%;
-  width: 500px;
+  animation-fill-mode: both;
   animation-name: underline-animation;
-  animation-duration: 1s;
-}
-
-.underline:hover {
-  background-color: white;
-  color: white;
+  animation-duration: 2s;
 }
 
 .left__button {
@@ -182,7 +181,8 @@
   z-index: 1;
   /* border: solid rgb(0, 0, 0); */
   color: white;
-  background-color: #1a1a1a;;
+  background-color: #1a1a1a;
+  ;
   border-radius: 25px;
   transition: 1s;
 }
@@ -195,7 +195,8 @@
   z-index: 1;
   /* border: solid rgb(0, 0, 0); */
   color: white;
-  background-color: #1a1a1a;;
+  background-color: #1a1a1a;
+  ;
   border-radius: 25px;
   transition: 1s;
 }
@@ -211,11 +212,10 @@
 
 @keyframes underline-animation {
   from {
-    opacity: 0%;
-    width: 0px;
+    width: 10px;
   }
+
   to {
-    opacity: 100%;
     width: 500px;
   }
 }
@@ -225,6 +225,7 @@
     opacity: 0%;
     margin-top: 500px;
   }
+
   to {
     opacity: 100%;
     margin-top: 40px;
