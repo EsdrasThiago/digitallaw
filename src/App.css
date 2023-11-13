@@ -137,27 +137,22 @@
   color: white;
 }
 
-.icsm__link:hover {
-  
-  transition: 2s;
-}
-
 .icsm__link h2 {
-  width: 500px;
-  font-size: 20px;
+  width: 30vw;
+  font-size: 2vh;
   margin: auto;
   transition: 2s;
 }
 
 .icsm__link:hover h2 {
   color: white;
-  font-size: 20.2px;
+  font-size: 2.2vh;
   transition: 2s;
 }
 
 .icsm__link img {
-  width: 500px;
-  height: 300px;
+  width: 30vw;
+  height: 32vh;
   border-radius: 20px;
 }
 
@@ -182,7 +177,6 @@
   /* border: solid rgb(0, 0, 0); */
   color: white;
   background-color: #1a1a1a;
-  ;
   border-radius: 25px;
   transition: 1s;
 }
@@ -191,7 +185,7 @@
   position: fixed;
   top: 90vh;
   width: 240px;
-  left: 85vw;
+  right: 10px;
   z-index: 1;
   /* border: solid rgb(0, 0, 0); */
   color: white;
