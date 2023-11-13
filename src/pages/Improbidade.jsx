@@ -20,7 +20,7 @@ function Improbidade() {
           <img src={improbidadePrincipalIMG} alt="Saco de dinheiro escrito ICMS"/>
           <h2>O que é improbidade administrativa?</h2>
         </Link>
-        <Link to="/icsmimpactos" className="icsm__link coming__class">
+        <Link to="/improbidadeadministrativa2" className="icsm__link coming__class">
           <img src={improbidadeIMG3} alt="Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?"/>
           <h2>Mudanças na Lei de Improbidade Administrativa após a vigência da lei 14.230/2021</h2>
         </Link>

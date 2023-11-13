@@ -51,7 +51,7 @@ function ImprobidadeAdministrativa() {
         <p>O STF entendeu que, salvo o Presidente da República, os agentes políticos estão sujeitos à dupla responsabilidade e se submetem tanto à responsabilização 
           civil pelos atos de improbidade administrativa quanto à responsabilização político-administrativa por crimes de responsabilidade</p>
       </div>
-      <Link to="/icsmimpactos" className="right__button"><h2>Próxima Matéria</h2></Link>
+      <Link to="/improbidadeadministrativa2" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )
