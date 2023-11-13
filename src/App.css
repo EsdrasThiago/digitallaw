@@ -132,6 +132,11 @@
   border-radius: 25px;
 }
 
+.main__icsm ol {
+  width: 40%;
+  margin: auto;
+}
+
 .icsm__link {
   margin-top: 40px;
   width: 30vw;

@@ -16,7 +16,7 @@ function Improbidade() {
     <div>
       <Header />
       <div className="flex">
-        <Link to="/icsmdiferencial" className="icsm__link coming__class">
+        <Link to="/improbidadeadministrativa" className="icsm__link coming__class">
           <img src={improbidadePrincipalIMG} alt="Saco de dinheiro escrito ICMS"/>
           <h2>O que é improbidade administrativa?</h2>
         </Link>
