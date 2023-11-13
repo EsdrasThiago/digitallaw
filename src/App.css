@@ -128,12 +128,13 @@
 }
 
 .main__icsm img {
+  width: 40vw;
   border-radius: 25px;
 }
 
 .icsm__link {
   margin-top: 40px;
-  width: 40vw;
+  width: 30vw;
   color: white;
 }
 
@@ -158,8 +159,10 @@
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  /* align-items: center; */
   width: 100vw;
+  flex-wrap: wrap;
 }
 
 .underline {

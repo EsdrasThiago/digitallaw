@@ -6,6 +6,7 @@ import Icms from './pages/Icms'
 import DiferencialIcms from './Icms/DiferencialIcms'
 import ImpactosSimples from './Icms/ImpactosSimples'
 import ModulacaoProposta from './Icms/ModulacaoProposta'
+import Improbidade from './pages/Improbidade'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/icsmdiferencial" element={<DiferencialIcms />} />
       <Route exact path="/icsmimpactos" element={<ImpactosSimples />} />
       <Route exact path="/icsmmodulacao" element={<ModulacaoProposta />} />
+      <Route exact path="/improbidade" element={<Improbidade />} />
     </Routes>
   )
 }
