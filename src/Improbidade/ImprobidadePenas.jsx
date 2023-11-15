@@ -1,7 +1,8 @@
 // import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import diferencialIMG from "../images/diferencialIMG.png";
+import improbidadeIMG from "../images/improbidade.png"
 
 function ImprobidadePenas() {
 
@@ -9,26 +10,20 @@ function ImprobidadePenas() {
     <div>
       <Header />
       <div className="main__icsm">
-      <img src={diferencialIMG} alt="Saco de dinheiro escrito ICMS"/>
-      <p>
-        No dia 16/04/2015 foi promulgada a Emenda Constitucional n° 87 de 2015,
-        que alterou a sistemática de cobrança do ICMS nas operações interestaduais
-        destinadas a não-contribuintes do imposto.
-      </p>
-      <p>
-        Trazendo para a prática,
-        vamos imaginar uma loja virtual de calçados, localizada no nosso estado (Bahia),
-        que vende um par de tênis para uma pessoa física localizada no Estado do Rio de Janeiro
-        por R$100,00. Pela sistemática antiga, deveríamos utilizar a alíquota interna do Estado
-        da Bahia (19%) e a totalidade do imposto iria para Ba (0,19x R$ 100,00 = 19,00).
-      </p>
-      <p>
-        Como podemos verificar, esta sistemática beneficiava os Estados remetentes,
-        pois acabavam recebendo todo o ICMS das operações interestaduais destinadas
-        a não-contribuintes.
-      </p>
+        <img src={improbidadeIMG} alt="Saco de dinheiro escrito ICMS" />
+        <p>
+          Apesar de não estar no código penal, quem comete improbidade pode, sim, sofrer consequências.
+          Pelo art. 37º da Constituição Federal, os condenados podem sofrer diversas consequências serem obrigados a ressarcir o dano e,
+          até mesmo, suspensão dos direitos políticos. Variando conforme a extensão do ato e gravidade. Paralelo a isto,
+          o órgão pode abrir um processo administrativo disciplinar - PAD contra o agente público.
+        </p>
+        <p>
+          Por exemplo: o PAD tem o objetivo de apurar a conduta do agente e o grau de responsabilidade que ele tem.
+          Portanto, lembre-se que existem casos em que cabe um processo criminal, o que acaba gerando outros desdobramentos.
+        </p>
       </div>
-      {/* <Link to="/icsmimpactos" className="right__button"><h2>Próxima Matéria</h2></Link> */}
+      <Link to="/improbidadeadministrativa2" className="left__button"><h2>Matéria Anterior</h2></Link>
+      <Link to="/improbidadediferenca" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )

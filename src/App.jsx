@@ -10,6 +10,11 @@ import Improbidade from './pages/Improbidade'
 import ImprobidadeAdministrativa from './Improbidade/ImprobidadeAdministrativa'
 import ImprobidadeAdministrativaLei from './Improbidade/ImprobidadeAdministrativaLei'
 import ImprobidadePenas from './Improbidade/ImprobidadePenas'
+import ImprobidadeDiferenca from './Improbidade/ImprobidadeDiferenca'
+import ImprobidadeNicolau from './Improbidade/ImprobidadeNicolau'
+import ImprobidadeLula from './Improbidade/ImprobidadeLula'
+import ImprobidadeDilma from './Improbidade/ImprobidadeDilma'
+import ImprobidadeEspecialista from './Improbidade/ImprobidadeEspecialista'
 
 function App() {
 
@@ -25,6 +30,11 @@ function App() {
       <Route exact path="/improbidadeadministrativa" element={<ImprobidadeAdministrativa />} />
       <Route exact path="/improbidadeadministrativa2" element={<ImprobidadeAdministrativaLei />} />
       <Route exact path="/improbidadepenas" element={<ImprobidadePenas />} />
+      <Route exact path="/improbidadediferenca" element={<ImprobidadeDiferenca />} />
+      <Route exact path="/improbidadenicolau" element={<ImprobidadeNicolau />} />
+      <Route exact path="/improbidadelula" element={<ImprobidadeLula />} />
+      <Route exact path="/improbidadedilma" element={<ImprobidadeDilma />} />
+      <Route exact path="/improbidadeespecialista" element={<ImprobidadeEspecialista />} />
     </Routes>
   )
 }

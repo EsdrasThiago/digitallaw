@@ -69,7 +69,7 @@ function Game() {
     setIsDisabled(false)
     setIsMarked(false)
     setTimer(30)
-    if (correctCounter == 4) {
+    if (correctCounter == 5) {
       setIsAllRight(true);
     }
   }

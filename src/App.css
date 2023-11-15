@@ -212,6 +212,10 @@
   margin-top: 100px;
 }
 
+.specialist__title {
+  color: gray;
+}
+
 @keyframes underline-animation {
   from {
     width: 10px;
