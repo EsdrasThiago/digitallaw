@@ -58,6 +58,8 @@
 
 .questions__buttons button {
   width: 12vw;
+  height: 10vh;
+  font-size: 100%;
   /* margin-right: 10px; */
 }
 
