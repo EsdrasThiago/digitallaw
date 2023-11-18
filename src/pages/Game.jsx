@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer";
 import questions from "../mock/questions";
 import shuffle from "../utils/shuffleArray";
+import themeMusic from "../audios/Musica_do_Quiz_Feito_com_o_Clipchamp.mp3"
 
 function Game() {
 
@@ -107,6 +108,9 @@ function Game() {
                       : 'wrong__choice')}
                   >{e}</button>
                 ))}
+                {!isMarked && <audio autoPlay="true" controls="controls" hidden="hidden">
+                  <source src={themeMusic} type="audio/mp3"></source>
+                </audio>}
               </div>
               <button
                 onClick={nextQuestion}
