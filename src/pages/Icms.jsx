@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import diferencialIMG from "../images/diferencialIMG.png";
 import impactoIMG from "../images/impactosIMG.png"
 import modulacaoIMG from "../images/modulacaoIMG.png"
+import alunos from "../images/IMG-20231128-WA0023.webp"
 
 function Icms() {
 
@@ -22,6 +23,10 @@ function Icms() {
         <Link to="/icsmmodulacao" className="icsm__link coming__class">
           <img src={modulacaoIMG} alt="Diversas pessoas"/>
           <h2>MODULAÇÃO PROPOSTA PELO SUPERIOR TRIBUNAL FEDERAL REFERENTE AO JULGAMENTO DA AÇÃO DIRETA DE INCONSTITUCIONALIDADE A RESPEITO DESTA TEMÁTICA</h2>
+        </Link>
+        <Link to="/icsmalunos" className="icsm__link coming__class">
+          <img src={alunos} alt="Alunos apresentando sobre ICMS" />
+          <h2>ALUNOS DO 5⁰ SEMESTRE DE DIREITO DA UNIFAMEC PRODUZEM PAPER ACADÊMICO SOBRE MATÉRIA TRIBUTÁRIA E OBTÉM NOTA MÁXIMA DOS AVALIADORES.</h2>
         </Link>
       </div>
       <Footer />

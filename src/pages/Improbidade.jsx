@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import coordenadorIMG from "../images/coordenador.jpg";
+import coordenadorIMG from "../images/coordenador_cropped.jpg";
 import dilmaIMG from "../images/dilma-rousseff-129.webp";
 import lulaIMG from "../images/LULA_OLINDA.jpg";
 import nicolauIMG from "../images/NICOLAU.jpg"
