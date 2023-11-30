@@ -15,6 +15,7 @@ import ImprobidadeNicolau from './Improbidade/ImprobidadeNicolau'
 import ImprobidadeLula from './Improbidade/ImprobidadeLula'
 import ImprobidadeDilma from './Improbidade/ImprobidadeDilma'
 import ImprobidadeEspecialista from './Improbidade/ImprobidadeEspecialista'
+import AlunosIcms from './Icms/AlunosIcms'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <Route exact path="/icsmdiferencial" element={<DiferencialIcms />} />
       <Route exact path="/icsmimpactos" element={<ImpactosSimples />} />
       <Route exact path="/icsmmodulacao" element={<ModulacaoProposta />} />
+      <Route exact path="/icsmalunos" element={<AlunosIcms />} />
       <Route exact path="/improbidade" element={<Improbidade />} />
       <Route exact path="/improbidadeadministrativa" element={<ImprobidadeAdministrativa />} />
       <Route exact path="/improbidadeadministrativa2" element={<ImprobidadeAdministrativaLei />} />

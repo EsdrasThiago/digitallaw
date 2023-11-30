@@ -30,6 +30,7 @@ function ModulacaoProposta() {
       <GameButton />
       </div>
       <Link to="/icsmimpactos" className="left__button"><h2>Matéria Anterior</h2></Link>
+      <Link to="/icsmalunos" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )
