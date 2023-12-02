@@ -8,7 +8,7 @@ function GameButton() {
   }
 
   return (
-    <button className="quiz__button" onClick={quizButton}>Jogar Quiz</button>
+    <button className="quiz__button" onClick={quizButton}>Digitallaw Games</button>
   )
 }
 
