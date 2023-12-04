@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import especialistaIcms from "../images/IMG-20231204-WA0098.webp"
+import fileIcms from "../files/DIAL.pdf"
 
 function EspecialistaIcms() {
 
@@ -29,6 +30,13 @@ function EspecialistaIcms() {
           Assim sendo, observa-se o impacto negativo gerado em desfavor das empresas optantes do Simples Nacional,
           sem, contudo, deixar de ressaltar a necessidadede criação de um mecanismo capaz de repartir de forma equilibrada as receitas do ICMS,
           a fim de efetivar os preceitos constitucionais de manutenção do pacto federativo e redução das desigualdades regionais.</p>
+      </div>
+      <div className="quiz__button">
+        <a href={fileIcms} download="Conteudo ICMS">
+          <button>
+            Baixar conteudo
+          </button>
+        </a>
       </div>
       <Link to="/icsmalunos" className="left__button"><h2>Matéria Anterior</h2></Link>
       <Footer />
