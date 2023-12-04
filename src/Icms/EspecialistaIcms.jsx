@@ -18,7 +18,7 @@ function EspecialistaIcms() {
           sobre as operações e prestações que destinem bens e serviços a consumidor final e o diferencial de alíquota respectivo,
           que se tornou relevante face alteração feita no artigo nº 155 da Constituição Federal, através da edição da Emenda Constitucional nº 87,
           de 16 de abril de 2015, para emissão de manifestação doutrinária a luz de uma reflexão jurídica hermeneuticamente</p>
-        <p>Nesse sentido a presente inquietação acima, se desenvolve em um terreno propicio e relevante a cerca da sistemática do ICMS inaugurada com base na modificação da redação do artigo 155, §2º,
+        <p>Nesse sentido a presente inquietação acima, se desenvolve em um terreno propício e relevante a cerca da sistemática do ICMS inaugurada com base na modificação da redação do artigo 155, §2º,
           incisos VII e VIII da Constituição Federal pela emenda constitucional nº 87 de 2015,
           a fim de destacar as Inconstitucionalidades e controvérsias decorrentes,
           bem como fazendo as inflexões sobre a sistemática de incidência do imposto sobre a circulação de mercadorias nas operações interestaduais,
