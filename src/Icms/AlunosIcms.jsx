@@ -20,6 +20,7 @@ function AlunosIcms() {
         </div>
       </div>
       <Link to="/icsmmodulacao" className="left__button"><h2>Matéria Anterior</h2></Link>
+      <Link to="/icsmespecialista" className="right__button"><h2>Próxima Matéria</h2></Link>
       <Footer />
     </div>
   )
