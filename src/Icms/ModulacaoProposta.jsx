@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
-import GameButton from "../components/GameButton"
 import Header from "../components/Header"
 import modulacaoIMG from "../images/modulacaoIMG.png"
 
@@ -27,7 +26,6 @@ function ModulacaoProposta() {
         em razão da ausência de norma que poderia gerar prejuízos aos estados. O ministro salientou que,
         durante esse período, o Congresso Nacional terá possibilidade de aprovar lei sobre o tema.
         Ficam afastadas da modulação as ações judiciais em curso sobre a questão.</p>
-      <GameButton />
       </div>
       <Link to="/icsmimpactos" className="left__button"><h2>Matéria Anterior</h2></Link>
       <Link to="/icsmalunos" className="right__button"><h2>Próxima Matéria</h2></Link>

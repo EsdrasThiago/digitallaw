@@ -5,7 +5,7 @@ import diferencialIMG from "../images/diferencialIMG.png";
 import impactoIMG from "../images/impactosIMG.png"
 import modulacaoIMG from "../images/modulacaoIMG.png"
 import alunos from "../images/IMG-20231128-WA0023.webp"
-import especialistaIcms from "../images/IMG-20231204-WA0098-icms.png"
+import especialistaIcms from "../images/icmshomeespecialista.png"
 
 function Icms() {
 

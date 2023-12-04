@@ -10,7 +10,6 @@ function IcsmLink() {
         <h2>PRINCIPAIS MUDANÇAS PROVOCADAS PELA EMENDA CONSTITUCIONAL 87/2015 REFERENTES AO DIFERENCIAL DE ALÍQUOTAS DO ICMS-DIFAL</h2>
         {/* <img src={impactoIMG} alt="Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?"/> */}
         {/* <img src={modulacaoIMG} alt="Diversas pessoas"/> */}
-        <hr className="underline" />
       </Link>
   )
 }

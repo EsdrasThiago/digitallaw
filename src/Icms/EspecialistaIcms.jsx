@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import especialistaIcms from "../images/IMG-20231204-WA0098.webp"
+import especialistaIcms from "../images/especialistaicmsmelhorado.png"
 import fileIcms from "../files/DIAL.pdf"
+import GameButton from "../components/GameButton"
 
 function EspecialistaIcms() {
 
@@ -10,7 +11,7 @@ function EspecialistaIcms() {
     <div className="box">
       <Header />
       <div className="main__icsm">
-        <img src={especialistaIcms} alt="Imagem do professor especialista" />
+        <img className="especialista__img" src={especialistaIcms} alt="Imagem do professor especialista" />
         <p className="specialist__title">LUCIANO DO NASCIMENTO COSTA ESPECIALISTA EM PÚBLICO DIREITO-PUC/MINAS, MESTRE EM DIREITO PROCESSUAL CONSTITUCIONAL-UNLZ ARGENTINA</p>
         <p>Os discentes do 5º semestre do Centro Universitário Metropolitano de Camaçari,
           vinculado ao projeto interdisciplinar da Unifamec-Criativa para o semestre 2023.2,
@@ -39,6 +40,7 @@ function EspecialistaIcms() {
         </a>
       </div>
       <Link to="/icsmalunos" className="left__button"><h2>Matéria Anterior</h2></Link>
+      <GameButton />
       <Footer />
     </div>
   )
