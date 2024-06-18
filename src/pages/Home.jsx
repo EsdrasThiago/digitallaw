@@ -1,17 +1,30 @@
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import IcsmLink from "../components/IcsmLink"
-import ImprobidadeLink from "../components/ImprobidadeLink"
+import { useEffect, useState } from "react"
+import { siteContentsMain } from "../mock/mainContents"
+import { Link } from "react-router-dom"
 
 function Home() {
+
+  const [homeContents, setHomeContents] = useState();
+
+  useEffect(() => {
+    const mainContents = siteContentsMain;
+    setHomeContents(mainContents)
+    console.log(mainContents.map((e) => e.title))
+  }, [])
 
   return (
     <div>
       <Header />
       <div className="flex">
-        <IcsmLink />
-        <ImprobidadeLink />
+        {homeContents?.map((e) => (
+          <Link to={e.link} className={e.className} key={e.id}>
+            <img src={e.img} alt={e.altImg} />
+            <h2>{e.title}</h2>
+          </Link>
+        ))}
       </div>
       <Footer />
     </div>

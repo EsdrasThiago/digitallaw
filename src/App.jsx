@@ -17,6 +17,7 @@ import ImprobidadeDilma from './Improbidade/ImprobidadeDilma'
 import ImprobidadeEspecialista from './Improbidade/ImprobidadeEspecialista'
 import AlunosIcms from './Icms/AlunosIcms'
 import EspecialistaIcms from './Icms/EspecialistaIcms'
+import Uberizacao from './pages/Uberizacao'
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       <Route exact path="/improbidadelula" element={<ImprobidadeLula />} />
       <Route exact path="/improbidadedilma" element={<ImprobidadeDilma />} />
       <Route exact path="/improbidadeespecialista" element={<ImprobidadeEspecialista />} />
+      <Route exact path="/uberizacao" element={<Uberizacao />} />
     </Routes>
   )
 }
