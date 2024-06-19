@@ -1,7 +1,11 @@
+import PrincipalContent from "../components/PrincipalContent"
+
 function Uberizacao() {
 
   return (
-    <div />
+    <div>
+      <PrincipalContent />
+    </div>
   )
 }
 
