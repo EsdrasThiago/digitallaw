@@ -1,23 +1,33 @@
 import { useEffect, useState } from "react";
-import { siteContents } from "../mock/mainContents";
+import { improbidadeContents } from "../mock/mainContents";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 function PrincipalContent() {
 
   const [contents, setContents] = useState();
+  const [page, setPage] = useState(0);
+
+  const onClickNextPage = () => {
+    setPage(page+1)
+  }
+
+  const onClickLastPage = () => {
+    setPage(page-1)
+  }
 
   useEffect(() => {
-    setContents(siteContents[0].pages[0])
-    console.log(siteContents[0].pages[0])
-  })
+    console.log(improbidadeContents[page])
+    setContents(improbidadeContents[page])
+  }, [page])
 
   return (
     <div>
       <Header />
       <div className="main__icsm">
-        {contents.map((e, i) => {
-          if(e.tag === "p") {
+        {contents?.map((e, i) => {
+          if (e.tag === "p") {
             return <p key={i}>{e.text}</p>
           } if (e.tag === "h2") {
             return <h2 key={i}>{e.text}</h2>
@@ -26,6 +36,9 @@ function PrincipalContent() {
           }
         })}
       </div>
+      {page === 0 && <Link to="/" className="left__button"><h2>Página Inicial</h2></Link>}
+      {page !== 0 && <button type="button" className="left__button" onClick={onClickLastPage}>Página Anterior</button>}
+      {page !== contents?.length && <button type="button" className="right__button" onClick={onClickNextPage}>Proxima Página</button>}
       <Footer />
     </div>
   )

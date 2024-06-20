@@ -4,6 +4,9 @@ import improbidadeIMG3 from "../images/improbidadeIMG3.jpg"
 import improbidadeIMG2 from "../images/improbidadeIMG2.webp"
 import improbidadeIMG from "../images/improbidade.png"
 import nicolauIMG from "../images/NICOLAU.jpg"
+import lulaIMG from "../images/LULA_OLINDA.jpg";
+import dilmaIMG from "../images/dilma-rousseff-129.webp";
+import coordenadorIMG from "../images/coordenador.jpg";
 
 export const siteContentsMain = [
     {
@@ -32,9 +35,7 @@ export const siteContentsMain = [
     }
 ]
 
-export const siteContents = [
-    {
-        pages: [
+export const improbidadeContents = [
             [
                 {
                     tag: "img",
@@ -203,9 +204,100 @@ export const siteContents = [
           o Tribunal de Contas da União confirmou o desvio de R$ 170 milhões, em valores da época. Atualizado,
           o montante desviado supera R$ 1 bilhão.`
                 },
-                
+            ],
+            [
+                {
+                    tag: "img",
+                    src: lulaIMG,
+                    alt: "Lula - Luis Inacio"
+                },
+                {
+                    tag: "p",
+                    text: `Luciana Santos foi prefeita em Olinda no ano de 2001-2008,
+          a ex-prefeita fazia parte do partido (PC do B) quando condenada pelo Tribunal de Justiça de Pernambuco (TJPE) por improbidade administrativa.
+          Por isso, segundo o Tribunal, ela ficou inelegível por seis anos.Além disso, ela foi multada em cinco vezes o salário que recebia como prefeita.
+          Tendo em vista que a improbidade administrativa se refere às condutas consideradas desonestas que podem variar desde o uso indevido de recursos públicos até o favorecimento ilícito de empresas e indivíduos em licitações e contratos.
+          Também se incluem nessa lista a nomeação de familiares para cargos públicos, ou seja, o nepotismo. Além disso,
+          o tráfico de influência e o desvio de finalidade na aplicação de recursos públicos.
+          O processo julgado em 2004 ainda cabia recurso, diz respeito ao gerenciamento do parque Energético e de iluminação da cidade,
+          região metropolitana de Recife , o valor do contrato foi de R$7,3 milhões. Sendo alegado nos autos,
+          a forma contratual firmada de forma fraudulenta com a empresa Citeluz Serviços de iluminação Urbana LTDA.
+          A decisão foi proferida na 1ª Vara da Fazenda Pública de Olinda. O processo incluiu, além da ex-prefeita e da empresa,
+          cinco servidores municipais. Eles foram condenados a perder os direitos políticos por cinco anos.
+          A ex-secretária de Obras do município Hilda Wanderley Gomes também sofreu condenação. Assim como Luciana Santos,
+          ela deverá passar seis anos sem os direitos políticos. Atualmente Luciana Santos foi escolhida para chefiar o Ministério da Ciência,
+          Tecnologia e Inovações no governo Luís Inácio da Silva em dezembro de 2022 Luciana é a primeira mulher a ocupar o posto.`
+                }
+            ],
+            [
+                {
+                    tag: "img",
+                    src: dilmaIMG,
+                    alt: "Dilma"
+                },
+                {
+                    tag: "p",
+                    text: `Dilma foi afastada pelo Senado sob acusação de crime de responsabilidade fiscal.
+          Os autores do pedido de afastamento de Dilma Rousseff alegaram que ela maquiou as contas públicas e desrespeitou a lei orçamentária durante a campanha eleitoral.
+          O objetivo seria dar uma falsa sensação de segurança à economia e garantir a reeleição em 2014.
+          As manobras foram batizadas de "pedaladas fiscais" em uma alusão à atividade física preferida da política.
+          Ela costumava andar de bicicleta nas horas de folga. E a palavra "pedalar" usada de maneira vulgar quer dizer "enganar".
+          O resultado do julgamento feito pelo senado resultou na perda do cargo de presidência da República,
+          todavia não houve a inabilitação para exercer um novo vínculo com a administração pública.`
+                }
+            ],
+            [
+                {
+                    tag: "img",
+                    src: coordenadorIMG,
+                    alt: "Dr.Jardel Alencar Machado"
+                },
+                {
+                    tag: "p",
+                    text: `Dr.Jardel Alencar Machado Advogado, Pós Graduado em Direito Público, Assessor Jurídico Municipal,
+                     Membro da Comissão de Juizados Especiais OAB/BA, Professor Universitário. 
+                     Ex – Presidente do Conselhos de Execuções Penais de Barreiras Bahia TJBA,
+                     Ex – Diretor de Relações Institucionais CCJA da OAB subseção Barreiras Bahia.`,
+                    className: "specialist__title"
+                },
+                {
+                    tag: "p",
+                    text: `Quando pensamos em um dos males que assolam a Administração Pública, a Improbidade Administrativa se sobressai,
+          não pelo conceito purista do termo, mas pela fragilidade da moralidade humana quando posta em “xeque” no decurso dos impulsos indispensáveis para a movimentação da máquina Administrativa.`,
+                },
+                {
+                    tag: "p",
+                    text: `A Improbidade Administrativa representa uma grave violação dos princípios éticos e legais que regem a administração pública.
+          Seus efeitos nocivos comprometem o desenvolvimento e a confiança da sociedade nas instituições governamentais.`,
+                },
+                {
+                    tag: "p",
+                    text: `Trata-se da responsabilidade moral dos agentes públicos em todos os seus atos,
+          mesmo quando a tal ilicitude oferece alguns benefícios para a população. Em outras palavras,
+          o cenário público se cobre pelo manto da generosidade administrativa,
+          onde recursos e benfeitorias públicas são facilmente garantidos para aqueles que se curvam aos mandamentos do sistema ímprobo.`,
+                },
+                {
+                    tag: "p",
+                    text: `No momento, ainda não há escapatória, o sistema confronta a moralidade pública e, por isso,
+          a Lei de Improbidade Administrativa jamais será suficiente para reverter o quadro na sua totalidade.
+          É necessário que além da atuação repressiva da lei em conjunto com o judiciário,
+          haja também uma iniciativa preventiva para nutrir e conservar a probidade daqueles que almejam contribuir com os serviços públicos,
+          sendo imperioso a atuação de um sistema de justiça imparcial, fiscalização rigorosa e o engajamento da população.`,
+                },
+                {
+                    tag: "p",
+                    text: `Diante deste cenário, mesmo com os atos repressivos do Estado,
+          resta notório a dificuldade de a moralidade administrativa receber seu devido destaque,
+          visto que em determinas situações, sua simples existência pode dificultar ou até mesmo inibir totalmente recursos,
+          emendas e diversos benefícios para a população.`,
+                },
+                {
+                    tag: "p",
+                    text: `Por isso, a Administração Pública enfrenta o grande desafio da “busca pela probidade”,
+          onde as raízes da desonestidade se enraizaram com o tempo em virtude da cultura,
+          dos costumes e da distorcida visão do que seriam políticas públicas, estas,
+          astuciosamente interpretadas como políticas “negociáveis”.`,
+                },
             ]
-        ],
-        id: 0,
-    },
 ]

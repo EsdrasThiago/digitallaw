@@ -12,7 +12,6 @@ function Home() {
   useEffect(() => {
     const mainContents = siteContentsMain;
     setHomeContents(mainContents)
-    console.log(mainContents.map((e) => e.title))
   }, [])
 
   return (
