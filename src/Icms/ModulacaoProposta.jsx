@@ -17,7 +17,7 @@ function ModulacaoProposta() {
         A matéria foi discutida no julgamento conjunto do Recurso Extraordinário (RE) 1287019, com repercussão geral (Tema 1093),
         e da Ação Direta de Inconstitucionalidade (ADI) 5469. Ao final do julgamento, os ministros decidiram que a decisão produzirá efeitos
         apenas a partir de 2022, dando oportunidade ao Congresso Nacional para que edite lei complementar sobre a questão.</p>
-      <h1>MODULAÇÃO DOS EFEITOS </h1>
+      <h1>MODULAÇÃO DOS EFEITOS</h1>
       <p>Os ministros aprovaram, por nove votos a dois, a modulação de efeitos para que a decisão, nos dois processos,
         produza efeitos a partir de 2022, exercício financeiro seguinte à data do julgamento, ou seja,
         as cláusulas continuam em vigência até dezembro de 2021, exceto em relação à cláusula 9ª,

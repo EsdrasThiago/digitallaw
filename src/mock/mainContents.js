@@ -7,6 +7,11 @@ import nicolauIMG from "../images/NICOLAU.jpg"
 import lulaIMG from "../images/LULA_OLINDA.jpg";
 import dilmaIMG from "../images/dilma-rousseff-129.webp";
 import coordenadorIMG from "../images/coordenador.jpg";
+import impactoIMG from "../images/impactosIMG.png"
+import modulacaoIMG from "../images/modulacaoIMG.png"
+import alunos from "../images/IMG-20231128-WA0023.webp"
+import fileIcms from "../files/Modelo_Paper_-_Unidade_II_UFC_1.pdf"
+import especialistaIcms from "../images/especialistaicmsmelhorado.png"
 
 export const siteContentsMain = [
     {
@@ -300,4 +305,139 @@ export const improbidadeContents = [
           astuciosamente interpretadas como políticas “negociáveis”.`,
                 },
             ]
+]
+
+export const icmsContents = [
+    [
+        {
+            tag: "img",
+            src: diferencialIMG,
+            alt: "Saco de dinheiro escrito 'ICMS'"
+        },
+        {
+            tag: "p",
+            text: `No dia 16/04/2015 foi promulgada a Emenda Constitucional n° 87 de 2015,
+        que alterou a sistemática de cobrança do ICMS nas operações interestaduais
+        destinadas a não-contribuintes do imposto.`
+        },
+        {
+            tag: "p",
+            text: `Trazendo para a prática,
+        vamos imaginar uma loja virtual de calçados, localizada no nosso estado (Bahia),
+        que vende um par de tênis para uma pessoa física localizada no Estado do Rio de Janeiro
+        por R$100,00. Pela sistemática antiga, deveríamos utilizar a alíquota interna do Estado
+        da Bahia (19%) e a totalidade do imposto iria para Ba (0,19x R$ 100,00 = 19,00).`
+        },
+        {
+            tag: "p",
+            text: `Como podemos verificar, esta sistemática beneficiava os Estados remetentes,
+        pois acabavam recebendo todo o ICMS das operações interestaduais destinadas
+        a não-contribuintes.`
+        },
+    ],
+    [
+        {
+            tag: "img",
+            src: impactoIMG,
+            alt: "Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?"
+        },
+        {
+            tag: "p",
+            text: `O Simples Nacional é um regime unificado de recolhimento tributário aplicável às Microempresas e Empresas de Pequeno Porte.`
+        },
+        {
+            tag: "p",
+            text: `Ele surgiu visando reduzir a burocracia e os custos de pequenos empresários, criando um sistema unificado de recolhimento de
+        tributos, simplificando declarações, entre outras facilidades, e desta forma, incentivar o empreendedorismo no país.`
+        },
+        {
+            tag: "p",
+            text: `Por ser um regime de tratamento tributário diferenciado e favorecido, com recolhimento unificado,
+        o DIFAL já estaria incluso no cálculo, assim como outros impostos devidos.`
+        },
+    ], 
+    [
+        {
+            tag: "img",
+            src: modulacaoIMG,
+            alt: "Diversas pessoas"
+        },
+        {
+            tag: "h1",
+            text: `DECISÃO`
+        },
+        {
+            tag: "p",
+            text: `O Plenário do Supremo Tribunal Federal (STF),em 21 de fevereiro de 2021,julgou inconstitucional a
+        cobrança do Diferencial de Alíquota do Imposto sobre Circulação de Mercadorias e Serviços (Difal/ICMS),
+        introduzida pela Emenda Constitucional (EC) 87/2015, sem a edição de lei complementar para disciplinar esse mecanismo de compensação.
+        A matéria foi discutida no julgamento conjunto do Recurso Extraordinário (RE) 1287019, com repercussão geral (Tema 1093),
+        e da Ação Direta de Inconstitucionalidade (ADI) 5469. Ao final do julgamento, os ministros decidiram que a decisão produzirá efeitos
+        apenas a partir de 2022, dando oportunidade ao Congresso Nacional para que edite lei complementar sobre a questão.`
+        },
+        {
+            tag: "h1",
+            text: `MODULAÇÃO DOS EFEITOS`
+        },
+        {
+            tag: "h1",
+            text: `Os ministros aprovaram, por nove votos a dois, a modulação de efeitos para que a decisão, nos dois processos,
+        produza efeitos a partir de 2022, exercício financeiro seguinte à data do julgamento, ou seja,
+        as cláusulas continuam em vigência até dezembro de 2021, exceto em relação à cláusula 9ª,
+        em que o efeito retroage a fevereiro de 2016, quando foi deferida, em medida cautelar na ADI 5464,
+        sua suspensão. Segundo o ministro Dias Toffoli, autor da proposta de modulação, a medida é necessária para evitar insegurança jurídica,
+        em razão da ausência de norma que poderia gerar prejuízos aos estados. O ministro salientou que,
+        durante esse período, o Congresso Nacional terá possibilidade de aprovar lei sobre o tema.
+        Ficam afastadas da modulação as ações judiciais em curso sobre a questão.`
+        },
+    ],
+    [
+        {
+            tag: "img",
+            src: alunos,
+            alt: "Alunos apresentando sobre ICMS"
+        },
+        {
+            tag: "a",
+            link: fileIcms,
+            downloadName: "Conteudo ICMS",
+            text: "Baixar conteudo"
+        }
+    ],
+    [
+        {
+            tag: "img",
+            src: especialistaIcms,
+            alt: "LUCIANO DO NASCIMENTO COSTA"
+        },
+        {
+            tag: "p",
+            className: "specialist__title",
+            text: `LUCIANO DO NASCIMENTO COSTA ESPECIALISTA EM PÚBLICO DIREITO-PUC/MINAS, MESTRE EM DIREITO PROCESSUAL CONSTITUCIONAL-UNLZ ARGENTINA`,
+        },
+        {
+            tag: "p",
+            text: `Os discentes do 5º semestre do Centro Universitário Metropolitano de Camaçari,
+          vinculado ao projeto interdisciplinar da Unifamec-Criativa para o semestre 2023.2,
+          apresentar-me a sua respectiva proposta de pesquisa de trabalho desta III unidade, intitulada o Imposto sobre operações relativas à Circulação de Mercadorias
+          e sobre prestações de Serviços de transporte interestadual e intermunicipal e de comunicação ICMS,
+          sobre as operações e prestações que destinem bens e serviços a consumidor final e o diferencial de alíquota respectivo,
+          que se tornou relevante face alteração feita no artigo nº 155 da Constituição Federal, através da edição da Emenda Constitucional nº 87,
+          de 16 de abril de 2015, para emissão de manifestação doutrinária a luz de uma reflexão jurídica hermeneuticamente.`,
+        },
+        {
+            tag: "p",
+            text: `Nesse sentido a presente inquietação acima, se desenvolve em um terreno propício e relevante a cerca da sistemática do ICMS inaugurada com base na modificação da redação do artigo 155, §2º,
+          incisos VII e VIII da Constituição Federal pela emenda constitucional nº 87 de 2015,
+          a fim de destacar as Inconstitucionalidades e controvérsias decorrentes,
+          bem como fazendo as inflexões sobre a sistemática de incidência do imposto sobre a circulação de mercadorias nas operações interestaduais,
+          acentuando, inclusive, o método vigente antes e depois do advento da EC nº 87 de 2015,
+          além da demonstração dos fundamentos políticos e econômicos que levaram à alteração,
+          com polarização para averiguar a constitucionalidade de nova sistemática,
+          a partir da análise dos principais reflexos tributários e econômicos contemporâneos.
+          Assim sendo, observa-se o impacto negativo gerado em desfavor das empresas optantes do Simples Nacional,
+          sem, contudo, deixar de ressaltar a necessidadede criação de um mecanismo capaz de repartir de forma equilibrada as receitas do ICMS,
+          a fim de efetivar os preceitos constitucionais de manutenção do pacto federativo e redução das desigualdades regionais.`,
+        },
+    ]
 ]

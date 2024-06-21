@@ -28,11 +28,15 @@ function PrincipalContent() {
       <div className="main__icsm">
         {contents?.map((e, i) => {
           if (e.tag === "p") {
-            return <p key={i}>{e.text}</p>
+            return <p key={i} className={e.className ? e.className : ""}>{e.text}</p>
           } if (e.tag === "h2") {
             return <h2 key={i}>{e.text}</h2>
           } if (e.tag === "img") {
             return <img key={i} src={e.src} alt={e.alt} />
+          } if (e.tag === "h1") {
+            return <h1 key={i}>{e.text}</h1>
+          } if (e.tag === "ol") {
+              return <ol key={i}>{e.content.map((el, ind) => <li key={`${i}${ind}`}>{el.text}</li>)}</ol>
           }
         })}
       </div>

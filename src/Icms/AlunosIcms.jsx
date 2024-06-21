@@ -13,9 +13,7 @@ function AlunosIcms() {
         <img src={alunos} alt="Alunos apresentando sobre ICMS" />
         <div className="quiz__button">
           <a href={fileIcms} download="Conteudo ICMS">
-            <button>
               Baixar conteudo
-            </button>
           </a>
         </div>
       </div>

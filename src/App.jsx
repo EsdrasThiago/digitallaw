@@ -6,7 +6,7 @@ import Icms from './pages/Icms'
 import DiferencialIcms from './Icms/DiferencialIcms'
 import ImpactosSimples from './Icms/ImpactosSimples'
 import ModulacaoProposta from './Icms/ModulacaoProposta'
-import Improbidade from './pages/Improbidade'
+// import Improbidade from './pages/Improbidade'
 import ImprobidadeAdministrativa from './Improbidade/ImprobidadeAdministrativa'
 import ImprobidadeAdministrativaLei from './Improbidade/ImprobidadeAdministrativaLei'
 import ImprobidadePenas from './Improbidade/ImprobidadePenas'
@@ -31,7 +31,7 @@ function App() {
       <Route exact path="/icsmmodulacao" element={<ModulacaoProposta />} />
       <Route exact path="/icsmalunos" element={<AlunosIcms />} />
       <Route exact path="/icsmespecialista" element={<EspecialistaIcms />} />
-      <Route exact path="/improbidade" element={<Improbidade />} />
+      {/* <Route exact path="/improbidade" element={<Improbidade />} /> */}
       <Route exact path="/improbidadeadministrativa" element={<ImprobidadeAdministrativa />} />
       <Route exact path="/improbidadeadministrativa2" element={<ImprobidadeAdministrativaLei />} />
       <Route exact path="/improbidadepenas" element={<ImprobidadePenas />} />
