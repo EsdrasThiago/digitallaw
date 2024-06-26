@@ -1,30 +1,31 @@
 import { useEffect, useState } from "react";
-import { improbidadeContents } from "../mock/mainContents";
-import Header from "./Header";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { switchPagesFunction } from "../mock/switchPages";
+import GameButton from "./GameButton";
+import { switchQuestionsFunction } from "../mock/switchQuestions";
 
-function PrincipalContent() {
+function PrincipalContent({ actualPage }) {
 
   const [contents, setContents] = useState();
+  const [contentsLength, setContentsLength] = useState();
   const [page, setPage] = useState(0);
 
   const onClickNextPage = () => {
-    setPage(page+1)
+    setPage(page + 1)
   }
 
   const onClickLastPage = () => {
-    setPage(page-1)
+    setPage(page - 1)
   }
 
   useEffect(() => {
-    console.log(improbidadeContents[page])
-    setContents(improbidadeContents[page])
-  }, [page])
+    const pageContents = switchPagesFunction(actualPage)
+    setContents(pageContents[page])
+    setContentsLength(pageContents.length)
+  }, [page, actualPage])
 
   return (
     <div>
-      <Header />
       <div className="main__icsm">
         {contents?.map((e, i) => {
           if (e.tag === "p") {
@@ -36,14 +37,22 @@ function PrincipalContent() {
           } if (e.tag === "h1") {
             return <h1 key={i}>{e.text}</h1>
           } if (e.tag === "ol") {
-              return <ol key={i}>{e.content.map((el, ind) => <li key={`${i}${ind}`}>{el.text}</li>)}</ol>
+            return <ol key={i}>{e.content.map((el, ind) => <li key={`${i}${ind}`}>{el.text}</li>)}</ol>
+          } if (e.tag === "a") {
+            return <div className="quiz__button" key={i}>
+              <a href={e.link} download={e.downloadName}>
+                <button>{e.text}</button>
+              </a>
+            </div>
+          } if (e.tag === "gameButton") {
+            const actualQuestions = switchQuestionsFunction(actualPage)
+            return <GameButton key={i} actualQuestions={actualQuestions} />
           }
         })}
       </div>
       {page === 0 && <Link to="/" className="left__button"><h2>Página Inicial</h2></Link>}
       {page !== 0 && <button type="button" className="left__button" onClick={onClickLastPage}>Página Anterior</button>}
-      {page !== contents?.length && <button type="button" className="right__button" onClick={onClickNextPage}>Proxima Página</button>}
-      <Footer />
+      {page !== contentsLength - 1 && <button type="button" className="right__button" onClick={onClickNextPage}>Proxima Página</button>}
     </div>
   )
 }

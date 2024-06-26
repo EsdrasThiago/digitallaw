@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer";
-import questions from "../mock/questions";
 import shuffle from "../utils/shuffleArray";
 import themeMusic from "../audios/Musica_do_Quiz_Feito_com_o_Clipchamp.mp3"
+// import { switchQuestionsFunction } from "../mock/switchQuestions";
 
-function Game() {
+function Game(props) {
 
   const [counter, setCounter] = useState(0);
   const [fillPercentage, setFillPercentage] = useState(30);
@@ -20,14 +20,15 @@ function Game() {
   const [isAllRight, setIsAllRight] = useState(false);
 
   useEffect(() => {
-    if (counter < questions.length) {
+    console.log(props)
+    if (counter < actualQuestions.length) {
       setAllAnswers([])
-      const allAnswersDefine = [questions[counter].correct_awnsner, ...questions[counter].wrong_awnsners]
+      const allAnswersDefine = [actualQuestions[counter].correct_awnsner, ...actualQuestions[counter].wrong_awnsners]
       const shuffleAnswers = shuffle(allAnswersDefine)
-      setQuestionTitle(questions[counter].question)
+      setQuestionTitle(actualQuestions[counter].question)
       setAllAnswers(shuffleAnswers)
     }
-    if (counter >= questions.length) {
+    if (counter >= actualQuestions.length) {
       setIsFinished(true);
     }
   }, [counter])
@@ -76,7 +77,7 @@ function Game() {
   }
 
   const questionMarked = ({ target }) => {
-    const isCorrect = questions[counter].correct_awnsner === target.value;
+    const isCorrect = actualQuestions[counter].correct_awnsner === target.value;
     if (isCorrect) setCorrectCounter(correctCounter + 1)
     if (!isCorrect) setWrongCounter(wrongCounter + 1)
     setIsMarked(true);
@@ -103,7 +104,7 @@ function Game() {
                     key={e + i}
                     disabled={isDisabled}
                     onClick={questionMarked}
-                    className={isMarked && ((e === questions[counter].correct_awnsner)
+                    className={isMarked && ((e === actualQuestions[counter].correct_awnsner)
                       ? 'correct__choice'
                       : 'wrong__choice')}
                   >{e}</button>

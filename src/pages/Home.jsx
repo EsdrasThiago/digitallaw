@@ -18,7 +18,7 @@ function Home() {
     <div>
       <Header />
       <div className="flex">
-        {homeContents?.map((e) => (
+        {homeContents?.sort((a, b) => b.id - a.id).map((e) => (
           <Link to={e.link} className={e.className} key={e.id}>
             <img src={e.img} alt={e.altImg} />
             <h2>{e.title}</h2>
