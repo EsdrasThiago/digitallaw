@@ -17,7 +17,7 @@ import celularComUber from "../images/celularcomlogodauber.jpg"
 import TST from "../images/TST.jpg"
 import graficos1 from "../images/graficos 1.jpg"
 import graficos2 from "../images/graficos 2.jpg"
-import especialistaUberizacao from "../images/Diversaspessoas.jpg"
+import especialistaUberizacao from "../images/especialista.jpg"
 
 export const siteContentsMain = [
     {
