@@ -12,6 +12,12 @@ import modulacaoIMG from "../images/modulacaoIMG.png"
 import alunos from "../images/IMG-20231128-WA0023.webp"
 import fileIcms from "../files/Modelo_Paper_-_Unidade_II_UFC_1.pdf"
 import especialistaIcms from "../images/especialistaicmsmelhorado.png"
+import diversasPessoas from "../images/Diversaspessoas.jpg"
+import celularComUber from "../images/celularcomlogodauber.jpg"
+import TST from "../images/TST.jpg"
+import graficos1 from "../images/graficos 1.jpg"
+import graficos2 from "../images/graficos 2.jpg"
+import especialistaUberizacao from "../images/Diversaspessoas.jpg"
 
 export const siteContentsMain = [
     {
@@ -32,7 +38,7 @@ export const siteContentsMain = [
     },
     {
         title: "A EXPLORAÇÃO CONTEMPORÂNEA EM TEMPOS DIGITAIS: A UBERIZAÇÃO COMO MODO INSEGURO DO TRABALHO",
-        img: "",
+        img: diversasPessoas,
         altImg: "Pessoas trabalhando em fábricas",
         className: "icsm__link",
         link: "uberizacao",
@@ -454,6 +460,11 @@ export const icmsContents = [
 export const uberizacaoContents = [
     [
         {
+            tag: "img",
+            src: diversasPessoas,
+            alt: "Diversas pessoas."
+        },
+        {
             tag: "h2",
             text: "Contexto histórico de trabalho e o surgimento da uberização no Brasil"
         },
@@ -499,6 +510,11 @@ agravando o quadro de desigualdade social.`
     ],
     [
         {
+            tag: "img",
+            src: celularComUber,
+            alt: "Celular com logo da Uber"
+        },
+        {
             tag: "h2",
             text: "A importância das contribuições sociais para os motoristas de aplicativo."
         },
@@ -524,6 +540,11 @@ proteção do trabalhador.`
         },
     ],
     [
+        {
+            tag: "img",
+            src: TST,
+            alt: "Tribunal Superior do Trabalho"
+        },
         {
             tag: "h2",
             text: `Solidificação jurisprudêncial e os entendimentos dos tribunais sobre a uberização.`
@@ -587,8 +608,21 @@ legislação brasileira. `
             tag: "h2",
             text: "Diante do exposto, foram desenvolvidos gráficos para a elucidação dos dados coletados:"
         },
+        {
+            tag: "img",
+            src: graficos1,
+        },
+        {
+            tag: "img",
+            src: graficos2,
+        }
     ],
     [
+        {
+            tag: "img",
+            src: especialistaUberizacao,
+            alt: "Lígia Alonso Catela"
+        },
         {
             tag: "p",
             text: "Lígia Alonso Catela, Advogada, Professora da UNIFAMEC, Especialista em Direito Material e Processual do Trabalho, Mestra em Direito, Governança e Políticas Públicas(UNIFACS).",
