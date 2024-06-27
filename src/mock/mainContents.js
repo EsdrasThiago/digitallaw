@@ -578,15 +578,6 @@ COMO MODO INSEGURO DO TRABALHO”.`
         },
         {
             tag: "p",
-            text: `O referido trabalho tem por finalidade o estudo de caso por meio de uma pesquisa 
-qualitativa, onde os resultados obtidos foram através do termo de consentimento e livre 
-esclarecimento, onde os motoristas por plataforma de mobilidade urbana no município de 
-Camaçari/Ba, submeteram-se a participar do projeto de pesquisa intitulado “A 
-EXPOLRAÇÃO CONTEMPORÂNEA EM TEMPOS DE DIGITAIS: A UBERIZAÇÃO 
-COMO MODO INSEGURO DO TRABALHO”.`
-        },
-        {
-            tag: "p",
             text: `A participação na pesquisa constituiu em produzir informações aprofundadas e 
 ilustrativas a respeito do tema, através de perguntas claras que estão relacionadas aos 
 sentimentos e percepções dos motoristas de aplicativos em relação às plataformas e a 
@@ -596,5 +587,60 @@ legislação brasileira. `
             tag: "h2",
             text: "Diante do exposto, foram desenvolvidos gráficos para a elucidação dos dados coletados:"
         },
+    ],
+    [
+        {
+            tag: "p",
+            text: "Lígia Alonso Catela, Advogada, Professora da UNIFAMEC, Especialista em Direito Material e Processual do Trabalho, Mestra em Direito, Governança e Políticas Públicas(UNIFACS).",
+            className: "specialist__title"
+        },
+        {
+            tag: "p",
+            text: `As relações laborais foram consideradas formais após a Consolidação das Leis do Trabalho, por volta do ano de 1943. 
+            É importante destacarmos isso porque alguns direitos foram ratificados quando da promulgação da nossa Constituição de 1988, ainda vigente.`
+        },
+        {
+            tag: "p",
+            text: `O trabalhador desde a época da Revolução Industrial era desassistido de direitos e garantias, e o que estamos vislumbrando atualmente é que o trabalho desenvolvido,
+              através das plataformas digitais, já que não assegura direitos, porém, cobra exaustivamente metas.
+               A prestação de serviço, por meio das plataformas digitais, demonstrante de forma latente a evolução da sociedade, 
+               tal alternativa ganhou ainda mais evidência quando vivenciamos a pandemia da COVID-19, 
+               onde as entregas/delivery eram a forma de acesso aos anseios da população naquele período.`
+        },
+        {
+            tag: "p",
+            text: `Destarte destacar que jamais um operador do Direito seria contra a prestação de serviço através das plataformas digitais, entretanto, 
+               o que não se pode olvidar, é que no Brasil as referidas formas de prestar serviço seriam uma espécie de complementação de renda, 
+               entretanto, o que se constata é que boa parte é a única renda para vencer o desemprego, o que não revela uma alternativa ideal, diante da ausência, por exemplo,
+            do recolhimento do INSS, que asseguraria em casos de acidente ou aposentadoria.`
+        },
+        {
+            tag: "p",
+            text: `Outro traço “injusto” é a ausência dos direitos do obreiro: como férias, 
+            décimo terceiro salário, FGTS, multa rescisória, descanso semanal remunerado e horas extras, enfim, existe um vínculo operacional, mas na hora de contabilizar o bônus,
+             o que se vislumbra é apenas o ônus.`
+        },
+        {
+            tag: "p",
+            text: `Será que no Brasil a forma do serviço prestado, e infelizmente evidenciado, como renda principal foge do ideal,
+              de que às empresas de plataforma digitais defendem, haja vista, sempre fora levantada a “bandeira” de complementação de renda, e não de exclusividade,
+               ou, até mesmo o princípio trabalhista de pessoalidade, que cai por terra, afinal, o cadastro é pessoal e intransferível. `
+        },
+        {
+            tag: "p",
+            text: `No Judiciário Brasileiro, quando nos deparamos com um entrave, que possui uma grande repercussão e que sua linha de decisão reverbere na sociedade,
+                a temática vai a “última instância”, ou seja, o Supremo Tribunal Federal (STF), tal situação é evidenciada, justamente, 
+                após um julgamento que ocorreu no Tribunal Superior do Trabalho(TST), visto que, na decisão exarada pelo Ilustre Tribunal, 
+                fora reconhecida a existência de vínculo empregatício entre o motorista e a empresa, por conseguinte, 
+                o que se revela pelo julgamento é que a Corte Trabalhista defende que a referida empresa se assemelha mais a uma empresa de transporte e não 
+                podendo ser considerada como uma plataforma digital. A situação é revestida de polêmica, pois envolve empresários, trabalhadores, sociedade, 
+                enfim, foi remetida para apreciação do STF, e a linha de defesa das empresas é justamente o direito constitucional à livre iniciativa de exercício de
+                 atividade econômica, logo o escopo principal da corte é uniformizar o entendimento, trazendo justamente a segurança jurídica que a coletividade precisa, 
+                 ressalvasse que a temática é urgente, já que existem mais de 10(dez) mil processos tramitando, e com certeza aguardando qual será o parecer final do 
+                 Supremo Tribunal Federal, assim, para sociedade só nos resta esperar, e torcer para que seja uma decisão justa e que seus reflexos que serão inevitáveis.`
+        },
+        {
+            tag: "gameButton",
+        }
     ]
 ]

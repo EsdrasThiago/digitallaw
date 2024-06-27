@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { switchPagesFunction } from "../mock/switchPages";
 import GameButton from "./GameButton";
 import { switchQuestionsFunction } from "../mock/switchQuestions";
+import Context from "../context/myContext";
 
 function PrincipalContent({ actualPage }) {
 
+  const { setQuestions } = useContext(Context)
   const [contents, setContents] = useState();
   const [contentsLength, setContentsLength] = useState();
   const [page, setPage] = useState(0);
@@ -45,8 +47,8 @@ function PrincipalContent({ actualPage }) {
               </a>
             </div>
           } if (e.tag === "gameButton") {
-            const actualQuestions = switchQuestionsFunction(actualPage)
-            return <GameButton key={i} actualQuestions={actualQuestions} />
+            setQuestions(switchQuestionsFunction(actualPage))
+            return <GameButton key={i} />
           }
         })}
       </div>
