@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import shuffle from "../utils/shuffleArray";
 import themeMusic from "../audios/Musica_do_Quiz_Feito_com_o_Clipchamp.mp3"
 import Context from "../context/myContext";
-// import { switchQuestionsFunction } from "../mock/switchQuestions";
 
 function Game() {
 
@@ -22,14 +21,14 @@ function Game() {
   const [isAllRight, setIsAllRight] = useState(false);
 
   useEffect(() => {
-    if (counter < questions.length) {
+    if (counter < questions?.length) {
       setAllAnswers([])
       const allAnswersDefine = [questions[counter].correct_awnsner, ...questions[counter].wrong_awnsners]
       const shuffleAnswers = shuffle(allAnswersDefine)
       setQuestionTitle(questions[counter].question)
       setAllAnswers(shuffleAnswers)
     }
-    if (counter >= questions.length) {
+    if (counter >= questions?.length) {
       setIsFinished(true);
     }
   }, [counter])
@@ -78,7 +77,7 @@ function Game() {
   }
 
   const questionMarked = ({ target }) => {
-    const isCorrect = questions[counter].correct_awnsner === target.value;
+    const isCorrect = questions[counter]?.correct_awnsner === target.value;
     if (isCorrect) setCorrectCounter(correctCounter + 1)
     if (!isCorrect) setWrongCounter(wrongCounter + 1)
     setIsMarked(true);
@@ -88,52 +87,52 @@ function Game() {
   return (
     <div>
       <Header />
-      <div>
-        {!isFinished && <h1>{questionTitle}</h1>}
-        {isFinished ?
-          (<div>
-            <h1>Acertou: {correctCounter}</h1>
-            <h1>Errou: {wrongCounter}</h1>
-          </div>) :
-          <div className="game__timer">
-            <div className="main__game">
-              <div className="questions__buttons">
-                {allAnswers.map((e, i) => (
-                  <button
-                    type="button"
-                    value={e}
-                    key={e + i}
-                    disabled={isDisabled}
-                    onClick={questionMarked}
-                    className={isMarked && ((e === questions[counter].correct_awnsner)
-                      ? 'correct__choice'
-                      : 'wrong__choice')}
-                  >{e}</button>
-                ))}
-                {!isMarked && <audio autoPlay="true" controls="controls" hidden="hidden">
-                  <source src={themeMusic} type="audio/mp3"></source>
-                </audio>}
+        <div>
+          {!isFinished && <h1>{questionTitle}</h1>}
+          {isFinished ?
+            (<div>
+              <h1>Acertou: {correctCounter}</h1>
+              <h1>Errou: {wrongCounter}</h1>
+            </div>) :
+            <div className="game__timer">
+              <div className="main__game">
+                <div className="questions__buttons">
+                  {allAnswers.map((e, i) => (
+                    <button
+                      type="button"
+                      value={e}
+                      key={e + i}
+                      disabled={isDisabled}
+                      onClick={questionMarked}
+                      className={isMarked && ((e === questions[counter].correct_awnsner)
+                        ? 'correct__choice'
+                        : 'wrong__choice')}
+                    >{e}</button>
+                  ))}
+                  {!isMarked && <audio autoPlay="true" controls="controls" hidden="hidden">
+                    <source src={themeMusic} type="audio/mp3"></source>
+                  </audio>}
+                </div>
+                <button
+                  onClick={nextQuestion}
+                  disabled={!isDisabled}
+                >Proxima Pergunta</button>
               </div>
-              <button
-                onClick={nextQuestion}
-                disabled={!isDisabled}
-              >Proxima Pergunta</button>
-            </div>
-            <div className="countdown">
-              <div className="circle">
-                <div
-                  className="fill"
-                  style={{
-                    clipPath: `circle(${fillPercentage}%)`,
-                  }}
-                ></div>
-                <div className="countdown-text">{timer}</div>
+              <div className="countdown">
+                <div className="circle">
+                  <div
+                    className="fill"
+                    style={{
+                      clipPath: `circle(${fillPercentage}%)`,
+                    }}
+                  ></div>
+                  <div className="countdown-text">{timer}</div>
+                </div>
               </div>
             </div>
-          </div>
-        }
-        {isAllRight && <h1>Parabens voce acertou tudo!!</h1>}
-      </div>
+          }
+          {isAllRight && <h1>Parabens voce acertou tudo!!</h1>}
+        </div>
       <Footer />
     </div>
   )

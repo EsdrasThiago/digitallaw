@@ -17,7 +17,8 @@ import celularComUber from "../images/celularcomlogodauber.jpg"
 import TST from "../images/TST.jpg"
 import graficos1 from "../images/graficos 1.jpg"
 import graficos2 from "../images/graficos 2.jpg"
-import especialistaUberizacao from "../images/especialista.jpg"
+import especialistaUberizacao from "../images/especialista.png"
+import referenciasUberizacao from "../images/referenciasUberizacao.jpg"
 
 export const siteContentsMain = [
     {
@@ -318,7 +319,8 @@ export const icmsContents = [
         {
             tag: "img",
             src: diferencialIMG,
-            alt: "Saco de dinheiro escrito 'ICMS'"
+            alt: "Saco de dinheiro escrito 'ICMS'",
+            className: "medium-size-img"
         },
         {
             tag: "p",
@@ -345,7 +347,8 @@ export const icmsContents = [
         {
             tag: "img",
             src: impactoIMG,
-            alt: "Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?"
+            alt: "Difal de ICMS: Empresas do Simples Nacional sao obrigadas a paga-lo?",
+            className: "medium-size-img"
         },
         {
             tag: "p",
@@ -366,7 +369,8 @@ export const icmsContents = [
         {
             tag: "img",
             src: modulacaoIMG,
-            alt: "Diversas pessoas"
+            alt: "Diversas pessoas",
+            className: "medium-size-img"
         },
         {
             tag: "h1",
@@ -386,7 +390,7 @@ export const icmsContents = [
             text: `MODULAÇÃO DOS EFEITOS`
         },
         {
-            tag: "h1",
+            tag: "p",
             text: `Os ministros aprovaram, por nove votos a dois, a modulação de efeitos para que a decisão, nos dois processos,
         produza efeitos a partir de 2022, exercício financeiro seguinte à data do julgamento, ou seja,
         as cláusulas continuam em vigência até dezembro de 2021, exceto em relação à cláusula 9ª,
@@ -401,7 +405,8 @@ export const icmsContents = [
         {
             tag: "img",
             src: alunos,
-            alt: "Alunos apresentando sobre ICMS"
+            alt: "Alunos apresentando sobre ICMS",
+            className: "medium-size-img"
         },
         {
             tag: "a",
@@ -414,7 +419,8 @@ export const icmsContents = [
         {
             tag: "img",
             src: especialistaIcms,
-            alt: "LUCIANO DO NASCIMENTO COSTA"
+            alt: "LUCIANO DO NASCIMENTO COSTA",
+            className: "medium-size-img"
         },
         {
             tag: "p",
@@ -462,7 +468,8 @@ export const uberizacaoContents = [
         {
             tag: "img",
             src: diversasPessoas,
-            alt: "Diversas pessoas."
+            alt: "Imagem principal Uberização",
+            className: "medium-size-img"
         },
         {
             tag: "h2",
@@ -512,7 +519,8 @@ agravando o quadro de desigualdade social.`
         {
             tag: "img",
             src: celularComUber,
-            alt: "Celular com logo da Uber"
+            alt: "Celular com logo da Uber",
+            className: "medium-size-img"
         },
         {
             tag: "h2",
@@ -543,7 +551,8 @@ proteção do trabalhador.`
         {
             tag: "img",
             src: TST,
-            alt: "Tribunal Superior do Trabalho"
+            alt: "Tribunal Superior do Trabalho",
+            className: "large-size-img"
         },
         {
             tag: "h2",
@@ -611,17 +620,28 @@ legislação brasileira. `
         {
             tag: "img",
             src: graficos1,
+            className: "large-size-img"
         },
         {
             tag: "img",
             src: graficos2,
+            className: "large-size-img"
+        }
+    ],
+    [
+        {
+            tag: "img",
+            src: referenciasUberizacao,
+            alt: "referencias uberização",
+            className: "large-size-img"
         }
     ],
     [
         {
             tag: "img",
             src: especialistaUberizacao,
-            alt: "Lígia Alonso Catela"
+            alt: "Lígia Alonso Catela",
+            className: "flip-animation low-size-img"
         },
         {
             tag: "p",

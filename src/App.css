@@ -1,7 +1,4 @@
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -15,8 +12,6 @@
 
 .countdown {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   height: 10vh;
 }
 
@@ -43,23 +38,19 @@
   transform: translate(-50%, -50%);
   font-size: 32px;
   color: white;
-  /* text-shadow: 
-               -1px -1px 0px #ffffff, 
-               -1px 1px 0px #ffffff,                    
-                1px -1px 0px #ffffff,                  
-                1px 0px 0px #ffffff; */
 }
 
 .questions__buttons {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  gap: 1vw;
 }
 
 .questions__buttons button {
-  width: 12vw;
-  height: 10vh;
-  font-size: 100%;
+  width: 15vw;
+  height: 15vh;
+  font-size: 1vw;
   /* margin-right: 10px; */
 }
 
@@ -84,25 +75,26 @@
 }
 
 .digital__icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  opacity: 60%;
   transition: 1s;
 }
 
 .digital__icon:hover {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  opacity: 100%;
   transition: 1s;
 }
 
 .main__game {
   margin: 0 auto;
-  /* margin-right: 0px; */
 }
 
 .main__footer {
   border-top: 2px solid rgb(132, 0, 255);
-  margin-top: 12vw;
+  margin-top: 2vw;
 }
 
 .icons__footer {
@@ -129,9 +121,19 @@
   margin-top: 20px;
 }
 
-.main__icsm img {
-  width: 30vw;
+.large-size-img {
+  width: 60vw;
   border-radius: 25px;
+}
+
+.medium-size-img {
+  width: 40vw;
+  border-radius: 5px;
+}
+
+.low-size-img {
+  width: 20vw;
+  border-radius: 5px;
 }
 
 .main__icsm ol {
@@ -148,14 +150,15 @@
 .icsm__link h2 {
   width: 30vw;
   font-size: 2vh;
+  opacity: 40%;
   margin: auto;
-  transition: 2s;
+  transition: 1s;
 }
 
 .icsm__link:hover h2 {
   color: white;
-  font-size: 2.2vh;
-  transition: 2s;
+  opacity: 100%;
+  transition: 1s;
 }
 
 .icsm__link img {
@@ -218,6 +221,13 @@
   color: gray;
 }
 
+.flip-animation {
+  animation-name:flip;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+
 @keyframes underline-animation {
   from {
     width: 10px;
@@ -237,5 +247,14 @@
   to {
     opacity: 100%;
     margin-top: 40px;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
